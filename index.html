@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification</title>
+
+    <style>
+      
+    body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ff6f00;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+.verification-container {
+    background-color: #1e1e1e;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+}
+
+.email-icon {
+    width: 60px;
+    height: auto;
+    color: #ff6f00;
+}
+
+.verify-button {
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    background-color: #ff6f00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.verify-button:hover {
+    background-color: #ff8f00;
+    box-shadow: 0 5px 15px rgba(255, 111, 0, 0.3);
+}
+
+.resend-link {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.resend-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .verification-container {
+        padding: 30px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .verify-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    .email-icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .verification-container {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .verify-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    .email-icon {
+        width: 40px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="verification-container">
+            <div class="icon-container">
+                <img src="https://img.icons8.com/?size=100&id=108813&format=png&color=000000" alt="Email Icon" class="email-icon">
+            </div>
+            <h1>Email Verification</h1>
+            <p>Thank you for signing up! Please verify your email address to complete the registration process.</p>
+            <a href="#" class="verify-button">Verify Your Email</a>
+            <p>If you didn’t receive the email, <a href="#" class="resend-link">click here to resend</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
